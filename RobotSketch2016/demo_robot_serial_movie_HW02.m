@@ -24,9 +24,9 @@
 clear all                                                                       %clear the workspace
 
 %user data files
-dh_robot_data = 'data_RRR_lab';                                                 %filename for dh parameters and options data (SCRIPT)
+dh_robot_data = 'data_RRR_lab_HW02';                                                 %filename for dh parameters and options data (SCRIPT)
 % dh_robot_data = 'data_RRR_lab_modified';                                        %load dh parameters and options from data file (SCRIPT)
-dh_movie_data = 'data_nR_spin_first_joint_movie';                               %filename for movie joint data (FUNCTION)
+dh_movie_data = 'data_path12_movie_HW02';                               %filename for movie joint data (FUNCTION)
 % dh_movie_data = 'data_nR_spin_all_joints_movie';                                %filename for movie joint data (FUNCTION)
 
 %input data and set parameters

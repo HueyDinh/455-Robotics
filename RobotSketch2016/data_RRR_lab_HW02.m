@@ -11,8 +11,8 @@
 %joint and link parameters
 %                   [  0,     1,     2,     3,     4]                           %dh structure values are logically indexed from frame 0 (base) to frame n+1 (gripper)
 %dh.t              = [nan,    30,    45,   -30,     0]*pi/180;                   %joint angles  (first element ignored)
-%dh.t = [nan, 30, 45, 15, 0]*pi/180; % Pose 1
-dh.t = [nan, 105, 45, -60, 0]*pi/180; % Pose 2
+dh.t = [nan, 30, 45, 15, 0]*pi/180; % Pose 1
+%dh.t = [nan, 105, 45, -60, 0]*pi/180; % Pose 2
 dh.d              = [nan,     7,     0,     0,     0];                          %joint offsets (first element ignored)
 dh.a              = [  0,  9.32,  9.32, 10.16,   nan];                          %link common normals (last element ignored)
 dh.f              = [  0,     0,     0,     0,   nan]*pi/180;                   %link twist angles (last element ignored)
@@ -34,13 +34,13 @@ end %if
 
   dh.movie.name     = ['RRR_robot'];   %(default)                               %exported movie name (.avi appended)
 
-  dh.movie.opt.axes = ['N'];           %(default)                               %determine optimal size of axes (requires an extra motion generation)
-% dh.movie.opt.axes = ['Y'];                                                    %determine optimal size of axes (requires an extra motion generation)
+% dh.movie.opt.axes = ['N'];           %(default)                               %determine optimal size of axes (requires an extra motion generation)
+  dh.movie.opt.axes = ['Y'];                                                    %determine optimal size of axes (requires an extra motion generation)
 
-  dh.pause          = ['N'];           %(default)                               %Y/N - pause/no pause to adjust view on 1st frame (N - good for testing)
-% dh.pause          = ['Y'];                                                    %Y/N - pause/no pause to adjust view on 1st frame (Y - good for final)
+% dh.pause          = ['N'];           %(default)                               %Y/N - pause/no pause to adjust view on 1st frame (N - good for testing)
+  dh.pause          = ['Y'];                                                    %Y/N - pause/no pause to adjust view on 1st frame (Y - good for final)
 
-  dh.trace          = ['N'];           %(default)                               %Y/N - trace/no trace all poses
-% dh.trace          = ['Y'];                                                    %Y/N - trace/no trace all poses
+% dh.trace          = ['N'];           %(default)                               %Y/N - trace/no trace all poses
+  dh.trace          = ['Y'];                                                    %Y/N - trace/no trace all poses
 
 %END{MOVIE OPTIONS}-------------------------------------------------------------
